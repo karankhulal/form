@@ -4,6 +4,31 @@
     <form action="//formspree.io/khulalkaran@gmail.com" method="POST">
       <p>Name:</p><input type="text" name="name"><br/>
       <p>Email:</p><input type="email" name="_replyto"><br/>
+      <html>
+
+<title>Simple Interest</title>
+<script>
+function calculate()
+			{
+				p = document.getElementById("p").value;
+				n = document.getElementById("n").value;
+				r = document.getElementById("r").value;
+				result = document.getElementById("result");
+				result.innerHTML="The Interest is" +(p*n*r/100);
+			}
+</script>
+</head>
+<body>
+	<h1>Simple Interest Calcullation</h1>
+
+		Amount: <input id="p"><br/>
+		Rate: <input id="r"><br/>
+		No. of years: <input id="n"><br/>
+
+		<button Onclick="calculate()">Calculate</button>
+
+		<p id="result"></p>
+
 <p> Gender</p><br/>
 <input type="radio" Name="Gender" id="gen"/>Male
 <input type="radio" Name="Gender" id="gen"/>Female
